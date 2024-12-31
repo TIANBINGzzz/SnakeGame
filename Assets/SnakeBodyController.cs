@@ -116,10 +116,17 @@ public class SnakeController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log($"Collision detected with: {collision.gameObject.name}");
         if (collision.CompareTag("Food"))
         {
             AddBodyPart();
             Destroy(collision.gameObject);
+            Debug.Log("Food eaten!");
         }
     }
+
+
+
+
+
 }

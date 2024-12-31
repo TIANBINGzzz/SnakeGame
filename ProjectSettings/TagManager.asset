@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Body
   - Food
+  - SnakeHead
   layers:
   - Default
   - TransparentFX
@@ -13,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - SnakeHead
+  - SnakeBody
+  - Food
   - 
   - 
   - 
