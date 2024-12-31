@@ -1,0 +1,26 @@
+# Unity 文件夹
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+
+# 自动生成的 Visual Studio 文件
+*.csproj
+*.sln
+*.userprefs
+
+# 版本控制时可忽略的文件
+*.pidb
+*.booproj
+*.svd
+
+# 打包相关
+*.apk
+*.unitypackage
+
+# 其他
+.DS_Store
+*.swp
+*.lock
