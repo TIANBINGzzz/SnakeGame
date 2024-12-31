@@ -81,21 +81,23 @@ public class SnakeController : MonoBehaviour
             positionQueue.RemoveAt(positionQueue.Count - 1);
         }
     }
-    
 
-    void MoveBody(){
-        for (int i = 1; i < bodyParts.Count; i++){
+
+    void MoveBody()
+    {
+        for (int i = 1; i < bodyParts.Count; i++)
+        {
             // 获取目标位置
             int targetIndex = Mathf.Min(
-                Mathf.RoundToInt(i * bodySpacing / moveSpeed / Time.deltaTime), 
+                Mathf.RoundToInt(i * bodySpacing / moveSpeed / Time.deltaTime),
                 positionQueue.Count - 1
             );
             Vector3 targetPosition = positionQueue[targetIndex];
 
             // 平滑移动身体块到目标位置
             bodyParts[i].position = Vector3.MoveTowards(
-                bodyParts[i].position, 
-                targetPosition, 
+                bodyParts[i].position,
+                targetPosition,
                 moveSpeed * Time.deltaTime
             );
         }
